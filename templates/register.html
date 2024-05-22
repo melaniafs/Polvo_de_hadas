@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./static/img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Solway:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <script src="https://kit.fontawesome.com/58904d4a11.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../static/css/register.css">
+
+    <title>Polvo de hadas</title>
+</head>
+
+<body>
+    <header class="encabezado">
+        <nav class="nav-principal">
+            <!-- Logo -->
+            <div id="div-padre-logo">
+                <div class="logo" id="div-logo">
+                    <a href="../index.html">
+                        <img src="../static/img/logo.png" alt="logo polvo de hadas juegos de mesa" id="img-logo">
+                    </a>
+                </div>
+                <!-- Hipervinculos para el menú -->
+                <div class="div-nav-padre">
+                    <ul class="nav-links">
+                        <li class="nav-li li1"><a href="../templates/masVendidos.html" class="nav-a a1">Lo mas vendido</a></li>
+                        <li class="nav-li li3"><a href="../templates/login.html" class="nav-a a3">Iniciar sesión</a></li>
+                    </ul>
+                </div>
+            </nav>
+    </header>
+    <main>
+        <section id="form-wrapper">
+            <h2>Registro</h2>
+            <!-- Formulario -->
+            <form action="#" id="formregister" method="GET" novalidate>
+                <div class="form-control">
+                    <!-- para hacer el form-control tipear .form-control -->
+                    <label for="firstname" class="label-register">Nombre</label>
+                    <!-- el for tiene que estar obligatoriamente que coincidir con el id del input -->
+                    <input type="text" name="firstname" id="firstname" placeholder="María" required class="input-register">
+                    <!-- place holder: ayuda al usuario a poner información 
+                        required hace que la info sea obligatoria -->
+                        <div class="error" id="error-firstname"></div>
+                        <!-- para hacer el div class="error" tipear .div class="error" -->
+                </div>
+             
+
+                <div class="form-control">
+                    <label for="lastname" class="label-register">Apellido</label>
+                    <input type="text" name="lastname" id="lastname" placeholder="Lopez" required
+                        class="input-register">
+                        <div class="error" id="error-lastname"></div>
+                </div>
+            
+
+                <div class="form-control">
+                    <label for="email" class="label-register">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="marialopez@ejemplo.com"
+                        class="input-register">
+                        <div class="error" id="error-email"></div>
+                </div> 
+              
+
+                <div class="form-control">
+                    <label for="password" class="label-register">Constraseña</label>
+                    <input type="password" name="password" id="password" required class="input-register">
+                    <div class="error" id="error-password"></div>
+                </div>
+            
+                    <label for="birthdate" id="label-birthdate">Fecha de nacimiento</label>
+                    <input type="date" name="birthdate" id="birthdate" required>
+                    <div class="error" id="error-birthdate"></div>
+                </div>
+
+                <div class="form-control">
+                    <label for="country" class="label-country">País</label>
+                    <select name="country" id="country" class="form-select">
+                        <option value=""></option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="CL">Chile</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="PE">Perú</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                    <div class="error" id="error-country"></div>
+                </div>
+
+                <div class="form-terms"> <!-- para crear esto pongo .form-terms -->
+                    <div class="terms">
+                        <input type="checkbox" name="" id="terms"> Acepto terminos y condiciones
+                    </div>
+                    <div class="error" id="error-terms"></div>
+                </div>
+
+                <button type="button" id="submit-button">Registrate</button>
+                <div class="form-help"></div>
+
+                <a href="#">¿Necesitas ayuda?</a>
+
+            </form>
+        </section>
+
+    </main>
+    <script src="../static/js/validacion.js"></script>
+</body>
+
+<footer>
+    <a id="twitter" href="https://www.twitter.com" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+    <a id="facebook" href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a>
+    <a id="pinterest" href="https://www.pinterest.com" target="_blank"><i class="fa fa-pinterest""></i></a>
+    <a id=" instagram" href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a id="linkedin" href="https://www.linkedin.com" target="_blank"><i class="fa fa-linkedin"></i></a>
+</footer>
+
+</html>

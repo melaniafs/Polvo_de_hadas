@@ -1,0 +1,387 @@
+:root {
+  --bg-color: #D20062;
+  --primary-color: #D6589F;
+  --secondary-color: #D895DA;
+  --third-color: #C4E4FF;
+  --bg-input-color: #4f31572c;
+  --bg-hover-rainbow: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--third-color);
+}
+
+/* TITULO */
+h1 {
+  font-family: 'Butterfly Kids', 'Solway', system-ui;
+  font-weight: 600;
+  font-size: 40px;
+  font-style: normal;
+
+  text-align: center;
+
+}
+
+/* TITULO BARRA LATERAL */
+h2 {
+  font-family: 'Butterfly Kids', 'Solway', system-ui;
+  font-weight: 580;
+  font-size: 25px;
+  text-align: center;
+  size: 12px;
+}
+
+.nav-principal {
+  display: flex;
+  justify-content: space-between;
+  /* Ajusta los elementos uniformemente */
+  align-items: center;
+  /* Centra los elementos verticalmente */
+  gap: 30px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  /* Elimina los estilos de lista predeterminados */
+  flex-wrap: wrap;
+}
+
+.nav-links li {
+  margin-right: 20px;
+  /* Espacio entre los elementos del menú */
+  font-family: 'Butterfly Kids', 'Solway', system-ui;
+  font-weight: 100;
+}
+
+.nav-links li:last-child {
+  margin-right: 0;
+  /* Elimina el margen derecho del último elemento */
+}
+
+/* ITEMS NAVEGACIÓN HEADER */
+.div-nav-padre {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.nav-a {
+  text-decoration: none;
+  color: black;
+  font-size: xx-large;
+  font-weight: 600;
+}
+
+.nav-a {
+  cursor: pointer;
+
+}
+
+.nav-li {
+  transition: background-color 0.5s ease;
+  /* Transición suave para el cambio de color */
+}
+
+.nav-li:hover {
+  background-image: var(--bg-hover-rainbow);
+  border-radius: 10%;
+  border-color: white;
+}
+
+.nav-a:hover {
+  color: white;
+}
+
+.a-lateral:hover {
+  color: white;
+}
+
+#div-padre-logo {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-items: end;
+}
+
+#div-logo {
+  height: 115px;
+  width: 134px;
+
+}
+
+.Polvo-de-hadas-juegos-de-mesa {
+  height: 115px;
+  width: 134px;
+  align-self: center;
+}
+
+/* ROTAR IMAGEN PARA LOGO */
+
+#img-logo {
+  height: 115px;
+  width: 180px;
+  transition: transform 1s ease;
+}
+
+#img-logo:hover {
+  transform: rotateY(180deg);
+}
+
+/* Estilos generales del formulario */
+form {
+  background-color: #f2f2f2;
+  /* Color de fondo del formulario */
+  padding: 20px;
+  /* Espaciado interno */
+  border: 1px solid #c1c1c1;
+  /* Borde del formulario */
+  width: 300px;
+  /* Ancho del formulario */
+  margin: auto;
+  /* Centrar el formulario horizontalmente */
+}
+
+/* Estilos para las etiquetas de los campos del formulario */
+label {
+  display: block;
+  /* Hacer que cada etiqueta ocupe su propia línea */
+  margin-bottom: 10px;
+  /* Espacio debajo de cada etiqueta */
+}
+
+/* Estilos para los campos de entrada de texto */
+.form-control {
+  width: 100%;
+  /* Ancho del campo de texto */
+  padding: 8px;
+  /* Espaciado interno del campo de texto */
+  margin-bottom: 20px;
+  /* Espacio debajo de cada campo de texto */
+  border: 1px solid #d1d1d1;
+  /* Borde del campo de texto */
+}
+
+/* Estilos para el botón de envío */
+#submit-button {
+  background-color: #4CAF50;
+  /* Color de fondo del botón */
+  color: white;
+  /* Color del texto del botón */
+  padding: 10px 15px;
+  /* Espaciado interno del botón */
+  border: none;
+  /* Sin borde para el botón */
+  cursor: pointer;
+  /* Cambiar el cursor a puntero */
+  width: 100%;
+  /* Ancho del botón */
+}
+
+/* Cambiar el estilo del botón al pasar el mouse */
+#submit-button:hover {
+  background-color: #45a049;
+}
+
+.barraLateral {
+  height:fit-content;
+  width:fit-content;
+  position: static;
+  background-color: var(--third-color);
+}
+
+.barraLateral a {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  color: #181419;
+  font-family: 'Butterfly Kids', 'Solway', Arial, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  font-style:normal;
+  width: auto;
+}
+
+.barraLateral a.active {
+  background-color: #ccc;
+}
+
+#encabezado-barra-lateral{
+ width: 100px;
+ height: 35px;
+ text-decoration: underline;
+}
+
+.juegos-pagina-principal {
+  display: flexbox;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  /* Espacio entre secciones */
+}
+
+.juegos-pagina-principal img {
+  width: 80%;
+  max-width: 100%;
+  /* Ajustar imágenes al contenedor */
+  height: auto;
+}
+
+.encabezado {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5%;
+  background-color: var(--bg-color);
+}
+
+.categoria-juego {
+  top: 50.4%;
+  left: 40%;
+}
+
+.juegos-img {
+  width: 200px;
+  height: 300px;
+}
+
+.categoria-juegos {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /* ALINEACION DE LA GRILLA CON RESPECTO AL CONTENEDOR */
+  justify-content: center;
+  align-content: center;
+}
+
+.juego-item-detail {
+  display: grid;
+  grid-template-columns: 1;
+  justify-self: center;
+
+}
+
+/* Estilos para la grilla */
+
+ .juegos-pagina-principal{
+  margin: 0 ;
+  left: auto  ;
+  display: grid;
+
+  grid-template-rows: 1fr 1fr 1fr;
+  /* Mostrar los juegos en 4 columnas */
+  grid-template-columns: repeat(2,12fr);
+ 
+
+        } 
+
+
+.juegos-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.juego {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
+  /* Agrega una sombra */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.juegos-container {
+  display: grid;
+  /* Mostrar los juegos en 4 columnas */
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
+  /* Espacio entre los juegos */
+  padding: 20px;
+}
+
+
+
+.informacion {
+  display: none;
+  /* Oculta la información por defecto */
+  position: static;
+  /* Posiciona la información sobre la imagen */
+  background-color: var(--secondary-color);
+  /* Color de fondo */
+  padding: 10px;
+  /* Espaciado interno */
+  border: 1px solid black;
+  /* Borde negro */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
+  /* Sombra */
+  z-index: 1;
+  /* Asegura que la información esté sobre la imagen */
+}
+
+.juego:hover .informacion {
+  display: block;
+  /* Muestra la información cuando se pasa el mouse sobre el contenedor */
+}
+
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+}
+
+#twitter {
+ color: darkblue;
+}
+
+#facebook {
+  color:#3b5998;
+}
+
+#pinterest {
+  color: red;
+}
+
+#instagram {
+ color: fuchsia;
+}
+
+#linkedin {
+  color: #0e76a8;
+}
+
+.container {
+  padding: 90px;
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (max-width:1920px) {
+    
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .juegos-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+    .juegos-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+
+}
