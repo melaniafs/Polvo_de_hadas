@@ -1,0 +1,411 @@
+:root {
+    --bg-color: #D20062;
+    --primary-color: #D6589F;
+    --secondary-color: #D895DA;
+    --third-color: #C4E4FF;
+    --bg-input-color: #4f31572c;
+    --bg-hover-rainbow: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet)
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: var(--third-color);
+  }
+/* Estilos CSS en colores pasteles */
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #b3d0e9; /* Fondo celeste suave */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+h1 {
+    font-family: 'Butterfly Kids', 'Solway', system-ui;
+    font-weight: 600;
+    font-size: 40px;
+    font-style: normal;
+  
+    text-align: center;
+  
+  }
+
+
+.nav-principal {
+    display: flex;
+    justify-content: space-between;
+    /* Ajusta los elementos uniformemente */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    gap: 30px;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+    /* Elimina los estilos de lista predeterminados */
+    flex-wrap: wrap;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+    /* Espacio entre los elementos del menú */
+    font-family: 'Butterfly Kids', 'Solway', system-ui;
+    font-weight: 100;
+  }
+  
+  .nav-links li:last-child {
+    margin-right: 0;
+    /* Elimina el margen derecho del último elemento */
+  }
+  
+  /* ITEMS NAVEGACIÓN HEADER */
+  .div-nav-padre {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .nav-a {
+    text-decoration: none;
+    color: black;
+    font-size: xx-large;
+    font-weight: 600;
+  }
+  
+  .nav-a {
+    cursor: pointer;
+  
+  }
+  
+  .nav-li {
+    transition: background-color 0.9s ease;
+    /* Transición suave para el cambio de color */
+  }
+  
+  .nav-li:hover {
+    background-image: var(--bg-hover-rainbow);
+    border-radius: 10%;
+    border-color: white;
+  }
+  
+  .nav-a:hover {
+    color: white;
+  }
+  
+  .a-lateral:hover {
+    color: white;
+  }
+  #img-logo {
+    height: 115px;
+    width: 180px;
+    transition: transform 1s ease;
+  }
+  
+  #img-logo:hover {
+    transform: rotateY(180deg);
+  }
+/* Estilos generales del formulario */
+form {
+
+    margin: 30px 30px;
+  
+    background-color: #f2f2f2;
+    /* Color de fondo del formulario */
+    padding: 20px;
+    /* Espaciado interno */
+    border: 1px solid #c1c1c1;
+    /* Borde del formulario */
+    width: 97%;
+    /* Ancho del formulario */
+
+  }
+  
+  /* Estilos para las etiquetas de los campos del formulario */
+  label {
+    display: block;
+    /* Hacer que cada etiqueta ocupe su propia línea */
+    margin-bottom: 10px;
+    /* Espacio debajo de cada etiqueta */
+  }
+  
+  /* Estilos para los campos de entrada de texto */
+  .form-control {
+    width: 100%;
+    /* Ancho del campo de texto */
+    padding: 8px;
+    /* Espaciado interno del campo de texto */
+    margin-bottom: 20px;
+    /* Espacio debajo de cada campo de texto */
+    border: 1px solid #d1d1d1;
+    /* Borde del campo de texto */
+  }
+  
+  /* Estilos para el botón de envío */
+  #submit-button {
+    background-color: #4CAF50;
+    /* Color de fondo del botón */
+    color: rgb(10, 7, 7);
+    /* Color del texto del botón */
+    padding: 10px 15px;
+    /* Espaciado interno del botón */
+    border: none;
+    /* Sin borde para el botón */
+    cursor: pointer;
+    /* Cambiar el cursor a puntero */
+    width: 100%;
+    /* Ancho del botón */
+  }
+  
+  /* Cambiar el estilo del botón al pasar el mouse */
+  #btn-save-cliente:hover {
+    background-color: #45a049;
+  }
+
+  /* Estilos generales */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f7ff; /* Fondo azul claro */
+    border-radius: 10px;
+}
+
+h2.search-Nombre {
+    color: #ff6b6b; /* Rosa pastel */
+}
+
+p.description {
+    color: #3498db; /* Azul pastel */
+}
+
+/* Estilos para los campos de entrada */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.form-control label {
+    font-weight: bold;
+    color: #333;
+  font-weight: 10px ;
+  align-items: center;
+}
+
+.input-search {
+    width: 100%;
+
+    border: 1px solid #ccc;
+    border-radius: 1px;
+    height: 50px;
+    background: rgba(255,255,255,0.1);
+    outline: none;
+    color: #080808;
+    font-size: 1rem;
+    padding: 0 20px;
+    
+}
+
+/* Estilos para el botón */
+.btn-ph {
+    background-color: #ff6b6b; /* Rosa pastel */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-ph:hover {
+    background-color: #45a049; /* Rosa pastel más oscuro al pasar el ratón */
+}
+
+
+footer {
+  background-color: var(--secondary-color);
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+}
+
+#twitter {
+  color: darkblue;
+}
+
+#facebook {
+  color: #3b5998;
+}
+
+#pinterest {
+  color: red;
+}
+
+#instagram {
+  color: fuchsia;
+}
+
+#linkedin {
+  color: #0e76a8;
+}
+
+.container {
+  padding: 90px;
+}
+
+/* PANTALLAS GRANDES */
+@media screen and (min-width: 1024px) {
+  .juegos-container {
+    flex-direction: row;
+    gap: 20px;
+  }
+}
+
+/* TABLETS */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .juegos-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+/* CELULARES */
+@media screen and (max-width: 767px) {
+  .juegos-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.description{
+    color: rgb(12, 12, 12);
+    margin: 20px 0px;
+}
+
+#form .d-flex{
+    justify-content: space-around;
+}
+
+.d-flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.form-control input {
+    height: 500px;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(199, 198, 198);
+    outline: none;
+    border-radius: 5px;
+    color: #080808;
+    font-size: 1rem;
+    padding: 10 20px;
+}
+
+.form-select {
+    display: block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border: 2px solid white; 
+    border-radius: 25px;
+    margin: 20px 0px;
+
+}
+
+.form-select option{
+    color:#2a2a2a;
+}
+
+.subtitle{
+  
+    align-self: center;
+    color: #ff6b6b;
+
+    font-size: 1.5vw;
+}
+
+#list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.table {
+    margin: 30px 0px;
+    width: 100%;
+    margin-bottom: 1rem;
+    color: black;
+    vertical-align: top;
+    border-color: #dee2e6;
+}
+
+.table th,
+.table td {
+    padding: 8px; 
+    text-align: center;
+}
+.table th{
+    border-bottom: 1px solid #ffffff;
+}
+.table td{
+    border-bottom: 1px solid #4f4f4f;
+}
+
+#list-div-clientes{
+    width: 100%;
+}
+
+.item-cliente{
+    background-color: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0px;
+}
+
+
+    
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+
+/* Estilos adicionales según tus necesidades */
+/* Por ejemplo, colores, fuentes, márgenes, etc. */
+
+/* Media query para pantallas pequeñas */
+@media (max-width: 768px) {
+  .form-control,
+  .table th,
+  .table td {
+      font-size: 14px; /* Ajusta el tamaño de fuente */
+  }
+}

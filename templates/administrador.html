@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Polvo de hadas</title>
+    <link rel="shortcut icon" href="../static/img/logo.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Solway:wght@300;400;500;700;800&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="./static/css/style.css">
+    <script src="https://kit.fontawesome.com/58904d4a11.js"crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Polvo de hadas</title>
+    <!-- Agregar fontawesome -->
+    <script src="https://kit.fontawesome.com/f7fb471b65.js" crossorigin="anonymous"></script>
+
+    <!-- HACEMOS REFERENCIA A UN DOCUMENTO CSS EXTERNO -->
+    <link rel="stylesheet" href="../static/css/crud-clientes.css">
+    
+    
+</head>
+
+<!-- Agregamos CCS en linea -->
+<body >
+    <!-- Agregar comentario -->
+    <!-- INDICAR LA CABECERA -->
+    <header class="header">
+        <!-- indica que un menu de navegacion -->
+
+        <nav class="nav-principal">
+            <!-- Logo -->
+            <div id="div-padre-logo">
+                <div class="logo" id="div-logo">
+                    <a href="../index.html">
+                        <img src="../static/img/logo.png" alt="logo polvo de hadas juegos de mesa" id="img-logo">
+                    </a>
+                </div>
+                <!-- Hipervinculos para el menú -->
+                <div class="div-nav-padre">
+                    <ul class="nav-links">
+                        <li class="nav-li li1"><a href="../index.html" class="nav-a a1">Inicio</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <!-- Indicar contenido principal de la pagina -->
+    <main> 
+        <section id="form" class="container ">
+            <h2 class="search-Nombre">Administrador de Registros</h2>
+            <p class="description" >En esta sección se podra llevar a cabo la gestión de los registros del portal</p>
+            <form action="#"  id="form-cliente">
+                <div class="d-flex">
+                    <div class="form-control d-flex-column">
+                        <label for="Nombre">Nombre</label>
+                        <input type="text" class="input-search" name="nombre" id="nombre-form">
+                    </div>
+                    <div class="form-control d-flex-column">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="input-search" name="apellido" id="apellido-form">
+                    </div>
+                    
+                    <div class="form-control d-flex-column">
+                        <label for="birthday">Fecha de Nacimiento</label>
+                        <input type="date" class="input-search" name="birthday" id="birthday-form">
+                    </div>
+  
+                    <div class="form-control d-flex-column">
+                        <label for="country" class="label-country">País</label>
+                        <select name="country" id="country-form" class="input-search">
+                            <option value=""></option>
+                            <option value="ARGENTINA">Argentina</option>
+                            <option value="BOLIVIA">Bolivia</option>
+                            <option value="BRASIL">Brasil</option>
+                            <option value="CHILE">Chile</option>
+                            <option value="COLOMBIA">Colombia</option>
+                            <option value="ECUADOR">Ecuador</option>
+                            <option value="PARAGUAY">Paraguay</option>
+                            <option value="PERÚ">Perú</option>
+                            <option value="URUGUAY">Uruguay</option>
+                            <option value="VENEZUELA">Venezuela</option>
+                        </select>
+                        <div class="error" id="error-country"></div>
+                    </div>
+
+                    <div class="form-control d-flex-column">
+                        <label for="correo">Correo</label>
+                        <input type="email" class="input-search" name="correo" id="correo-form">
+                    </div>  
+                    <div class="form-control d-flex-column">
+                        <label for="password">Contraseña</label>
+                        <input type="password" class="input-search" name="password" id="password-form">
+                    </div>               
+                    <input type="hidden"  name="id" id="id-cliente">
+                    <button class="btn-ph" type="button" id="btn-save-cliente">Agregar</button>
+                </div>
+            </form> 
+        </section>
+        <section id="list" class="container">
+            <h3 class="subtitle">Listado de Registros</h3>
+            <table id="list-table-clientes" class="table">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Fecha de Nacimiento</th>
+                        <th>País</th>
+                        <th>Correo</th>
+                        <th>Password</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-table-clientes">
+                    
+                </tbody>
+            </table>
+        </section>  
+    </main>
+    <!-- Indicar el pie de página -->
+    <footer id="footer">
+        <a href="">Términos y condiciones</a>
+        <a href="">Preguntas Frecuentes</a>
+        <a href="">Ayuda</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../static/js/index.js"></script>
+    <script src="../static/js/crud.js"></script>
+</body>
+
+</html>
+   

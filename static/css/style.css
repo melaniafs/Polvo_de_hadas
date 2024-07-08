@@ -243,50 +243,24 @@ label {
   background-color: var(--bg-color);
 }
 
-.categoria-juego {
-  top: 50.4%;
-  left: 40%;
+/* Asegúrate de que .barraLateral y .juegos-pagina-principal estén uno al lado del otro */
+.juegos-container {
+  display: flex;
+  gap: 20px; /* Espacio entre el menú lateral y la grilla de juegos */
+  padding: 20px;
 }
 
-.juegos-img {
-  width: 200px;
-  height: 300px;
+/* Ajusta el ancho del menú lateral y la grilla de juegos */
+.barraLateral {
+  flex: 1;
+  max-width: 250px; /* Ajusta el ancho del menú lateral según tus necesidades */
 }
 
-.categoria-juegos {
+.juegos-pagina-principal {
+  flex: 3;
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  /* ALINEACION DE LA GRILLA CON RESPECTO AL CONTENEDOR */
-  justify-content: center;
-  align-content: center;
-}
-
-.juego-item-detail {
-  display: grid;
-  grid-template-columns: 1;
-  justify-self: center;
-
-}
-
-/* Estilos para la grilla */
-
- .juegos-pagina-principal{
-  margin: 0 ;
-  left: auto  ;
-  display: grid;
-
-  grid-template-rows: 1fr 1fr 1fr;
-  /* Mostrar los juegos en 4 columnas */
-  grid-template-columns: repeat(2,12fr);
- 
-
-        } 
-
-
-.juegos-img {
-  max-width: 100%;
-  height: auto;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 20px;
 }
 
 .juego {
@@ -295,51 +269,38 @@ label {
   text-align: center;
   transition: transform 0.3s ease-in-out;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.8);
-  /* Agrega una sombra */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
 }
 
-.juegos-container {
-  display: grid;
-  /* Mostrar los juegos en 4 columnas */
-  grid-template-columns: repeat(4,1fr);
-  gap: 20px;
-  /* Espacio entre los juegos */
-  padding: 20px;
+.juegos-img {
+  width: 100%;
+  height: auto;
 }
-
-
 
 .informacion {
   display: none;
-  /* Oculta la información por defecto */
-  position: static;
-  /* Posiciona la información sobre la imagen */
+  position: absolute;
   background-color: var(--secondary-color);
-  /* Color de fondo */
   padding: 10px;
-  /* Espaciado interno */
   border: 1px solid black;
-  /* Borde negro */
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
-  /* Sombra */
   z-index: 1;
-  /* Asegura que la información esté sobre la imagen */
 }
 
 .juego:hover .informacion {
   display: block;
-  /* Muestra la información cuando se pasa el mouse sobre el contenedor */
 }
-#help{
+
+#help {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   color: white;
   background-color: black;
   font-size: xx-large;
 }
-
 
 footer {
   background-color: var(--secondary-color);
@@ -349,11 +310,11 @@ footer {
 }
 
 #twitter {
- color: darkblue;
+  color: darkblue;
 }
 
 #facebook {
-  color:#3b5998;
+  color: #3b5998;
 }
 
 #pinterest {
@@ -361,7 +322,7 @@ footer {
 }
 
 #instagram {
- color: fuchsia;
+  color: fuchsia;
 }
 
 #linkedin {
@@ -373,21 +334,25 @@ footer {
 }
 
 /* PANTALLAS GRANDES */
-@media screen and (max-width:1920px) {
-    
+@media screen and (min-width: 1024px) {
+  .juegos-container {
+    flex-direction: row;
+    gap: 20px;
+  }
 }
 
 /* TABLETS */
 @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .juegos-container{
-        grid-template-columns: repeat(2,1fr);
-    }
+  .juegos-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 /* CELULARES */
 @media screen and (max-width: 767px) {
-    .juegos-container{
-        grid-template-columns: repeat(1,1fr);
-    }
-
+  .juegos-container {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
