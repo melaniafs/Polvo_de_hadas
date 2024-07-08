@@ -39,6 +39,7 @@ h1 {
 
 
 .nav-principal {
+
     display: flex;
     justify-content: space-between;
     /* Ajusta los elementos uniformemente */
@@ -206,7 +207,7 @@ p.description {
     border: 1px solid #ccc;
     border-radius: 1px;
     height: 50px;
-    background: rgba(255,255,255,0.1);
+    background: rgb(255, 255, 255);
     outline: none;
     color: #080808;
     font-size: 1rem;
